@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.khomsi.site_project.CategoryRepoTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.63 s <<< FAILURE! - in com.khomsi.site_project.CategoryRepoTest
+categoryFindByAlias  Time elapsed: 0.06 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual not to be null
+	at com.khomsi.site_project.CategoryRepoTest.categoryFindByAlias(CategoryRepoTest.java:35)
+

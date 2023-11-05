@@ -1,0 +1,7 @@
+com\khomsi\site_project\CategoryTest.class
+com\khomsi\site_project\ProductRepositoryTest.class
+com\khomsi\site_project\UserTest.class
+com\khomsi\site_project\ProductTest.class
+com\khomsi\site_project\OrderBasketTests.class
+com\khomsi\site_project\CategoryRepoTest.class
+com\khomsi\site_project\WebStoreApplicationTests.class

@@ -25,4 +25,6 @@ public interface IUserService {
     public void deleteUser(Integer id) throws UserNotFoundException;
 
     Page<User> listByPage(int pageNum);
+
+    void registerUser(User user);
 }

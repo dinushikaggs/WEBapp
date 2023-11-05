@@ -32,18 +32,23 @@ public class UserService implements IUserService {
     @Override
     public void saveUser(User user) {
         boolean isUpdatedUser = (user.getId() != null);
-        if (isUpdatedUser) {
-            User existingUser = userRepository.getReferenceById(user.getId());
+        try {
+            if (isUpdatedUser) {
+                User existingUser = userRepository.getReferenceById(user.getId());
 
-            if (user.getPassword().isEmpty()) {
-                user.setPassword(existingUser.getPassword());
+                if (user.getPassword().isEmpty()) {
+                    user.setPassword(existingUser.getPassword());
+                } else {
+                    encodePassword(user);
+                }
             } else {
                 encodePassword(user);
             }
-        } else {
-            encodePassword(user);
+            userRepository.save(user);
+        } catch (Exception e) {
+            // Handle the exception here, you can log it or perform other error handling actions
+            e.printStackTrace(); // Example: Print the exception to the console
         }
-        userRepository.save(user);
     }
 
     @Override
@@ -107,5 +112,11 @@ public class UserService implements IUserService {
         Pageable pageable = PageRequest.of(pageNum - 1, USER_PER_PAGE);
         return userRepository.findAll(pageable);
     }
+
+    @Override
+    public void registerUser(User user) {
+
+    }
+
 
 }

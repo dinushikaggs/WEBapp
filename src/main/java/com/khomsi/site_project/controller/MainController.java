@@ -25,7 +25,7 @@ public class MainController {
     @Autowired
     private ProductService productService;
 
-    @GetMapping("/")
+    @GetMapping("/category")
     public String index(Model model) {
         model.addAttribute("listCategories", categoryRep.findAllEnabled());
         try {
@@ -50,6 +50,7 @@ public class MainController {
         user.setUserInfo(userInfo);
         userInfo.setUser(user);
         userService.saveUser(user);
+
         return "redirect:/";
     }
 
@@ -67,7 +68,7 @@ public class MainController {
         return "shopping-cart";
     }
 
-    @GetMapping("/category")
+    @GetMapping("/")
     public String showCategories(Model model) {
         List<Category> listEnabledCategories = categoryRep.findAllEnabled();
         model.addAttribute("listCategories", listEnabledCategories);

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.khomsi.site_project.ProductTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.108 s <<< FAILURE! - in com.khomsi.site_project.ProductTest
+testUpdateProduct  Time elapsed: 0.01 s  <<< ERROR!
+javax.persistence.EntityNotFoundException: Unable to find com.khomsi.site_project.entity.Product with id 12
+	at com.khomsi.site_project.ProductTest.testUpdateProduct(ProductTest.java:69)
+
+testDeleteProduct  Time elapsed: 0.012 s  <<< ERROR!
+org.springframework.dao.EmptyResultDataAccessException: No class com.khomsi.site_project.entity.Product entity with id 12 exists!
+	at com.khomsi.site_project.ProductTest.testDeleteProduct(ProductTest.java:79)
+

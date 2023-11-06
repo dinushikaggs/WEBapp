@@ -91,8 +91,8 @@ public class OrderController {
 
         String shipping = order.getShippingType() == 0 ? "Ukr poshta" : "Nova poshta";
 
-        String subject = "Thank you for ordering in SENKO";
-        String senderName = "Senko Store";
+        String subject = "Thank you for ordering in BYTEBAZAAR";
+        String senderName = "BYTEBAZAAR Store";
         String mailContent = "<p><b>Order number:</b> " + order.getId() + "</p>";
         mailContent += "<p><b>Payment:</b> " + order.getOrderStatus() + "</p>";
         mailContent += "<p><b>Shipping:</b> " + shipping + "</p>";

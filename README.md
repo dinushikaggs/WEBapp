@@ -1,4 +1,4 @@
-# ![icon](https://user-images.githubusercontent.com/71443826/190462552-83a4263b-f2d2-4814-a6c0-850dc89438d2.png)SENKO Web Store
+# ![icon](https://user-images.githubusercontent.com/71443826/190462552-83a4263b-f2d2-4814-a6c0-850dc89438d2.png)BYTEBAZAAR Web Store
 
 
 

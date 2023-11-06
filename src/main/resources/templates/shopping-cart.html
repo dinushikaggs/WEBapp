@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
 >
-<head th:replace="blocks/fragments :: head('Shopping Cart - SENKO', 'none')"></head>
+<head th:replace="blocks/fragments :: head('Shopping Cart - BYTEBAZAAR', 'none')"></head>
 <body>
 <!--NavBar-->
 <div th:replace="blocks/fragments :: navbar"></div>
@@ -69,9 +69,10 @@
                                                 </div>
                                                 <div class="col-md-3 price">
                                                     <span class="productSubtotalTitle">[[#{shoppingCart.subtotal}]]</span>
+                                                    <span>$</span>
                                                     <span class="productSubtotal"
                                                           style="width:800px; margin:0 auto; font-weight: 500;"
-                                                          th:id="'subtotal' + ${product.id}">[[${basketItem.subtotal}]]</span><span>₴</span>
+                                                          th:id="'subtotal' + ${product.id}">[[${basketItem.subtotal}]]</span>
                                                 </div>
                                             </div>
                                         </div>

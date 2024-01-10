@@ -26,3 +26,5 @@ Password: admin
 * User will receive email with order after it was finished successfully.
 * Admin can add or modify everything in DB (product, user, category, vendor, basket, delivery)
 "# WEBapp" 
+"# WEBapp" 
+"# WEBapp" 
